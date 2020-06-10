@@ -1,3 +1,5 @@
+// Made for Juliano Alves
+
 class ConversorNumber {
     constructor() {
         this.number = '';
