@@ -165,6 +165,10 @@ export const Embed = css`
         font-size: 32px;
         margin-top: 16px;
         width: 100%;
+
+        @media (max-width: 1024px) {
+            font-size: 22px;
+        }
     }
 
     .iframe-info {
@@ -172,6 +176,7 @@ export const Embed = css`
         justify-content: space-between;
         margin-top: 15px;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     .iframe-buttons {
@@ -194,6 +199,12 @@ export const Embed = css`
     .iframe-vizu {
         color: ${colors.grey};
         font-weight: 400;
+
+        /* Responsive Font-size View */
+
+        @media (max-width: 1024px) {
+            font-size: 15px;
+        }
     }
 
     .iframe-description {
@@ -203,6 +214,10 @@ export const Embed = css`
             width: 100%;
             word-break: break-word;
             white-space: pre-wrap;
+
+            @media (max-width: 1024px) {
+                font-size: 0.9rem;
+            }
         }
     }
 
@@ -210,6 +225,14 @@ export const Embed = css`
         border: none;
         height: 720px;
         width: 100%;
+
+        @media (max-width: 1620px) {
+            height: 480px;
+        }
+
+        @media (max-width: 477px) {
+            height: 200px;
+        }
     }
 `;
 
