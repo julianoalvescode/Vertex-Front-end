@@ -13,10 +13,12 @@ export const Search = css`
     justify-content: center;
     align-items: center;
     margin-top: 28px;
+    flex-wrap: wrap;
 
     .FormikForm {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
     }
 `;
 
