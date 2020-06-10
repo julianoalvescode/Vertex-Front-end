@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { MdArrowBack } from 'react-icons/md';
 import { AiFillLike, AiFillDislike } from 'react-icons/ai';
 import colors from '~/styles/settings';
+import Utils from '~/utils/conversorNumber';
 
 import { Container } from './styles';
 
@@ -26,15 +27,17 @@ const EmbedYoutube = ({ link, title, vizu, like, dislike, description }) => {
                 </div>
                 <h3 className="iframe-title">{title}</h3>
                 <div className="iframe-info">
-                    <h4 className="iframe-vizu">{vizu} vizualizações</h4>
+                    <h4 className="iframe-vizu">
+                        {Utils.convertDecimal(vizu)} vizualizações
+                    </h4>
                     <div className="iframe-buttons">
                         <button type="button">
                             <AiFillLike size="26" color={colors.grey} />
-                            {like}
+                            {Utils.convertDecimal(like)}
                         </button>
                         <button type="button">
                             <AiFillDislike size="26" />
-                            {dislike}
+                            {Utils.convertDecimal(dislike)}
                         </button>
                     </div>
                 </div>
