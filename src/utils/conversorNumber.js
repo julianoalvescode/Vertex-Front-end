@@ -1,4 +1,4 @@
-// Made for Juliano Alves
+// Lib for Converter number in Decimal
 
 class ConversorNumber {
     constructor() {

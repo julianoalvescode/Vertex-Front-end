@@ -1,8 +1,8 @@
 import React from 'react';
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'framer-motion'; // Lib for transitions around Routes
 import { Switch } from 'react-router-dom';
 
-import Route from './Route';
+import Route from './Route'; // Route custom
 import Dashboard from '~/pages/Dashboard';
 import Embed from '~/pages/Embed';
 

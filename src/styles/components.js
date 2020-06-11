@@ -13,6 +13,7 @@ export const Link = css`
     }
 `;
 
+// Style Input main
 export const Search = css`
     display: flex;
     width: 100%;
@@ -95,6 +96,7 @@ export const Input = css`
     }
 `;
 
+// Style Error message Form
 export const ErrorMessage = css`
     color: ${colors.primary};
     height: 30px;
@@ -106,6 +108,7 @@ export const Dashboard = css`
     width: 100%;
 `;
 
+// Style List of Videos
 export const ListVideos = css`
     width: 100%;
     display: grid;
@@ -164,6 +167,7 @@ export const EmbedContainer = css`
     width: 100%;
 `;
 
+// Style Embed of Video there are Info, Iframe, Likes ...
 export const Embed = css`
     width: 90%;
     margin: 0 auto;
@@ -258,15 +262,5 @@ export const Embed = css`
         @media (max-width: 477px) {
             height: 200px;
         }
-    }
-`;
-
-export const LoadScreen = css`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    img {
-        height: 80px;
     }
 `;
