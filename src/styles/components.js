@@ -3,8 +3,14 @@ import { darken } from 'polished';
 import colors from './settings';
 
 export const Link = css`
-    text-align: center;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+
+    a {
+        display: flex;
+        align-items: center;
+    }
 `;
 
 export const Search = css`
