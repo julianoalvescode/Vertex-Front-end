@@ -21,10 +21,34 @@ export const Search = css`
     margin-top: 28px;
     flex-wrap: wrap;
 
+    .FormikFormFloat {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
     .FormikForm {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        animation-name: example;
+        animation-duration: 1s;
+
+        @keyframes example {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 0.7;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
     }
 `;
 
