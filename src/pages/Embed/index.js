@@ -1,24 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 import { useSelector } from 'react-redux';
 import { Container } from './styles';
 
-import LoadScreen from '~/components/LoadScreen';
 import EmbedYoutube from '~/components/EmbedYoutube';
 
 const Embed = () => {
     const embed = useSelector((state) => state.video.selectedVideo);
 
-    const [loading, setLoading] = useState(true);
-
-    useEffect(() => {
-        setLoading(false);
-    }, []);
-
     return (
         <>
             <Container>
-                {!loading ? null : <LoadScreen />}
                 {embed != null
                     ? embed.map((i) => (
                           <EmbedYoutube

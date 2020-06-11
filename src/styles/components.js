@@ -99,6 +99,7 @@ export const ErrorMessage = css`
     color: ${colors.primary};
     height: 30px;
     padding: 20px 2px;
+    overflow: hidden;
 `;
 
 export const Dashboard = css`
@@ -157,12 +158,6 @@ export const Video = css`
     img {
         width: 100%;
     }
-`;
-
-export const WithoutInfo = css`
-    font-size: 16px;
-    font-weight: 400;
-    color: ${colors.primary};
 `;
 
 export const EmbedContainer = css`
