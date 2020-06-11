@@ -6,7 +6,7 @@ const AwaitRequest = () => {
     return (
         <>
             <Container>
-                <h1>Nenhuma informação disponível</h1>
+                <h1>Nenhum vídeo disponível</h1>
             </Container>
         </>
     );
