@@ -99,10 +99,7 @@ export const Video = css`
     display: flex;
     flex-direction: column;
     cursor: pointer;
-
-    &:empty {
-        background-color: red;
-    }
+    width: 100%;
 
     .title {
         color: ${colors.black};
@@ -115,7 +112,8 @@ export const Video = css`
         font-weight: 400;
         margin-top: 6px;
         font-size: 12px;
-        width: auto;
+        width: 100%;
+        word-wrap: break-word;
     }
 
     button {
