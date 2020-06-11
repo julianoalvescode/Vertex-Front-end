@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { PersistGate } from 'redux-persist/integration/react';
 import { Provider } from 'react-redux';
 import { Helmet } from 'react-helmet';
@@ -15,6 +15,13 @@ import { store, persistor } from './store';
 import GlobalStyle from './styles/generic';
 
 function App() {
+    useEffect(() => {
+        console.log(
+            '%c Foi massa demais construir essa aplicação, espero que gostem do resultado ',
+            'background: #222; color: #bada55'
+        );
+    });
+
     return (
         <>
             <Helmet>
