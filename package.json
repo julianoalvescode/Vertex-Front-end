@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "aos": "^3.0.0-beta.6",
     "axios": "^0.19.2",
+    "cypress": "^4.8.0",
     "formik": "^2.1.4",
     "framer-motion": "^1.11.0",
     "history": "^4.10.1",
@@ -36,7 +37,10 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "cypress": "cypress run",
+    "cypress:chrome": "cypress run -b chrome",
+    "cypress:open": "cypress open"
   },
   "eslintConfig": {
     "extends": "react-app"

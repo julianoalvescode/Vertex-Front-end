@@ -37,6 +37,7 @@ export default function Search({ placeholder }) {
                                 type="text"
                                 name="search"
                                 placeholder={placeholder}
+                                data-cy="input"
                             />
                             <Button name="Buscar" />
                         </FormMain>
