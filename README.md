@@ -23,7 +23,6 @@
 
 
 
-
 > Uma aplicação para visualizar vídeos do Youtube  consumindo a API Youtube Data v3 feito com React JS
 
 
