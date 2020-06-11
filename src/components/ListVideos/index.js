@@ -10,7 +10,7 @@ const ListVideos = ({ children }) => {
     return (
         <>
             {active ? <Link to="video" text="Vizualizar video ativo" /> : null}
-            <Container>{children}</Container>
+            <Container data-cy="list-videos">{children}</Container>
         </>
     );
 };

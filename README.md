@@ -1,68 +1,150 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+<p  align="center">
+<img  src="https://i.pinimg.com/originals/d6/a9/b3/d6a9b3630ff0a5d47bafb2c61bb60409.gif"  width="400" alt="Barbershop">
+</p>
 
-### `yarn start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<h1 align="center">Vertex Teste Frontend</h1>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p  align="center">
+<img  src="https://img.shields.io/badge/author-Juliano%20Alves-red" />
+</a>
+<a  href="">
+<img  src="https://img.shields.io/github/stars/julianoalvescode/Barber" />
+</a>
+<a  href="">
+<img  src="https://img.shields.io/github/license/julianoalvescode/Barber" />
+</a>
 
-### `yarn build`
+</p>
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> Uma aplicação para visualizar vídeos do Youtube  consumindo a API Youtube Data v3 feito com React JS
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<br />
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# :pushpin: Roadmap
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+* [Features](#rocket-features)
 
-### Analyzing the Bundle Size
+* [Instalação](#construction_worker-instalação)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-### Making a Progressive Web App
+* [Como Começar](#runner-começar)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-### Advanced Configuration
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+* [License](#closed_book-license)
 
-### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-### `yarn build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+# :rocket: Features
+
+
+
+ * 📝 Adicionar vídeos a aplicação.
+ * 📝Assistir vídeo com Embed, visualizações, likes, deslikes e descrição.
+
+## Tecnologias
+
+ * ⚛ **ReactJS** -
+ *  🕸 **Redux and Redux Saga**
+ * 💅 **Styled-components**
+ * 📪 **React-toastify**
+ * 🤓 **Yup**-
+ * 🛩 **Formik**
+ * 💆 **Lint**
+ * 🤖 **Cypress**
+
+
+
+
+
+# :construction_worker: Instalação
+
+
+
+**Você precisa ter instalado [Node.js](https://nodejs.org/en/download/) ,[Git](https://git-scm.com/downloads) , [Yarn](https://yarnpkg.com/) primeiro para rodar os comandos**
+
+
+
+```git clone https://github.com/julianoalvescode/To-Do.git```
+
+
+
+Os URLs SSH fornecem acesso a um repositório Git via SSH, um protocolo seguro. Se você usa uma chave SSH registrada na sua conta Github, clone o projeto usando este comando:
+
+
+
+```git clone git@github.com:julianoalvescode/To-Do.git```
+
+
+
+**Instalar dependências**
+
+
+
+```yarn install```
+
+
+
+
+
+
+
+# :runner: Começar
+
+
+
+
+
+Execute o seguinte comando para iniciar a aplicação num ambiente de desenvolvimento:
+
+
+
+```yarn start```
+
+  Em seguida, no seu navegador, introduza
+
+    http://localhost:3000
+
+
+
+
+
+# 🤖 Testes
+
+
+Execute o seguinte comando para iniciar os testes
+
+
+
+```yarn cypress```
+
+
+
+# :closed_book: License
+
+
+
+Lançado em 2020.
+
+Este projecto encontra-se no âmbito do MIT license
+
+
+
+Feito com amor por [Juliano Alves](https://github.com/julianoalvescode) 💜🚀
+
+

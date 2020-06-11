@@ -1,8 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 
-import WithoutInfo from '~/components/WithoutInfo';
-
 import ListVideos from '~/components/ListVideos';
 import Video from '~/components/Video';
 
@@ -15,19 +13,17 @@ const Dashboard = () => {
         <>
             <Container>
                 <ListVideos>
-                    {videos != null ? (
-                        videos.map((i) => (
-                            <Video
-                                key={i.kind}
-                                thumbnail={i.snippet.thumbnails.high.url}
-                                title={i.snippet.title}
-                                description={i.snippet.description}
-                                id={i.id.videoId}
-                            />
-                        ))
-                    ) : (
-                        <WithoutInfo />
-                    )}
+                    {videos != null
+                        ? videos.map((i) => (
+                              <Video
+                                  key={i.kind}
+                                  thumbnail={i.snippet.thumbnails.high.url}
+                                  title={i.snippet.title}
+                                  description={i.snippet.description}
+                                  id={i.id.videoId}
+                              />
+                          ))
+                        : null}
                 </ListVideos>
             </Container>
         </>

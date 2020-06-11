@@ -1,5 +1,5 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 import { Field, ErrorMessage, Form as FormikForm, Formik } from 'formik';
 import * as yup from 'yup';
@@ -15,6 +15,7 @@ const validations = yup.object().shape({
 
 export default function Search({ placeholder }) {
     const dispatch = useDispatch();
+    const float = useSelector((state) => state.video.float);
 
     const handleDispatch = ({ search }) => {
         dispatch(searchRequest(search));
@@ -28,12 +29,15 @@ export default function Search({ placeholder }) {
                     validationSchema={validations}
                     onSubmit={handleDispatch}
                 >
-                    <FormikForm className="FormikForm">
+                    <FormikForm
+                        className={float ? 'FormikForm' : 'FormikFormFloat'}
+                    >
                         <FormMain>
                             <Field
                                 type="text"
                                 name="search"
                                 placeholder={placeholder}
+                                data-cy="input"
                             />
                             <Button name="Buscar" />
                         </FormMain>

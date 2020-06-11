@@ -8,7 +8,7 @@ export default function DefaultButton({ name }) {
     return (
         <>
             <Container>
-                <button type="submit">
+                <button data-cy="submit" type="submit">
                     <MdSearch size="16" color="#fff" />
                     {name}
                 </button>

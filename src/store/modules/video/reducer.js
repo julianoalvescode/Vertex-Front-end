@@ -4,6 +4,7 @@ const INITIAL_STATE = {
     videos: null,
     selectedVideo: false,
     success: false,
+    float: false,
 };
 
 export default function video(state = INITIAL_STATE, action) {
@@ -11,6 +12,7 @@ export default function video(state = INITIAL_STATE, action) {
         case '@video/SEARCH_SUCCESS':
             return produce(state, (draft) => {
                 draft.videos = action.payload.items;
+                draft.float = true;
             });
         case '@video/EMBED_SUCCESS':
             return produce(state, (draft) => {

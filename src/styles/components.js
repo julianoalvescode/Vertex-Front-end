@@ -3,20 +3,53 @@ import { darken } from 'polished';
 import colors from './settings';
 
 export const Link = css`
-    text-align: center;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+
+    a {
+        display: flex;
+        align-items: center;
+    }
 `;
 
+// Style Input main
 export const Search = css`
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
     margin-top: 28px;
+    flex-wrap: wrap;
+
+    .FormikFormFloat {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
 
     .FormikForm {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
+        animation-name: example;
+        animation-duration: 1s;
+
+        @keyframes example {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 0.7;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
     }
 `;
 
@@ -63,16 +96,19 @@ export const Input = css`
     }
 `;
 
+// Style Error message Form
 export const ErrorMessage = css`
     color: ${colors.primary};
     height: 30px;
     padding: 20px 2px;
+    overflow: hidden;
 `;
 
 export const Dashboard = css`
     width: 100%;
 `;
 
+// Style List of Videos
 export const ListVideos = css`
     width: 100%;
     display: grid;
@@ -91,10 +127,7 @@ export const Video = css`
     display: flex;
     flex-direction: column;
     cursor: pointer;
-
-    &:empty {
-        background-color: red;
-    }
+    width: 100%;
 
     .title {
         color: ${colors.black};
@@ -107,7 +140,8 @@ export const Video = css`
         font-weight: 400;
         margin-top: 6px;
         font-size: 12px;
-        width: auto;
+        width: 100%;
+        word-wrap: break-word;
     }
 
     button {
@@ -129,16 +163,11 @@ export const Video = css`
     }
 `;
 
-export const WithoutInfo = css`
-    font-size: 16px;
-    font-weight: 400;
-    color: ${colors.primary};
-`;
-
 export const EmbedContainer = css`
     width: 100%;
 `;
 
+// Style Embed of Video there are Info, Iframe, Likes ...
 export const Embed = css`
     width: 90%;
     margin: 0 auto;
@@ -165,6 +194,10 @@ export const Embed = css`
         font-size: 32px;
         margin-top: 16px;
         width: 100%;
+
+        @media (max-width: 1024px) {
+            font-size: 22px;
+        }
     }
 
     .iframe-info {
@@ -172,6 +205,7 @@ export const Embed = css`
         justify-content: space-between;
         margin-top: 15px;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     .iframe-buttons {
@@ -194,6 +228,12 @@ export const Embed = css`
     .iframe-vizu {
         color: ${colors.grey};
         font-weight: 400;
+
+        /* Responsive Font-size View */
+
+        @media (max-width: 1024px) {
+            font-size: 15px;
+        }
     }
 
     .iframe-description {
@@ -203,6 +243,10 @@ export const Embed = css`
             width: 100%;
             word-break: break-word;
             white-space: pre-wrap;
+
+            @media (max-width: 1024px) {
+                font-size: 0.9rem;
+            }
         }
     }
 
@@ -210,15 +254,13 @@ export const Embed = css`
         border: none;
         height: 720px;
         width: 100%;
-    }
-`;
 
-export const LoadScreen = css`
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        @media (max-width: 1620px) {
+            height: 480px;
+        }
 
-    img {
-        height: 80px;
+        @media (max-width: 477px) {
+            height: 200px;
+        }
     }
 `;

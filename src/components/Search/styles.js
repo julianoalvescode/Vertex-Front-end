@@ -18,9 +18,8 @@ export const Container = styled.div`
 `;
 
 export const FormMain = styled.div`
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 15px;
+    display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 `;
